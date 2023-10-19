@@ -13,15 +13,11 @@ public class N1Ex7 {
 	
 public static void main (String[]args) {
 		
-		List<String> stringList = Arrays.asList("Joan", "22", "Green flower", "Alex", "13", "84791");
+		List<String> stringList = Arrays.asList("Joan", "22", "Green flower", "Alejandra", "9", "84791");
 	
-		Stream <String> streamStrings = stringList.stream().sorted(Comparator.comparing(String::length));
+		Stream <String> streamStrings = stringList.stream().sorted(Comparator.comparing(String::length).reversed());
 		
-		List <String> reverseList = streamStrings.collect(Collectors.toList());
-		
-		Collections.reverse(reverseList);
-		
-		System.out.println(reverseList);
+		streamStrings.forEach(i -> System.out.println(i));
 
 	}
 
