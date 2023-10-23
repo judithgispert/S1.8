@@ -12,6 +12,8 @@ public class N2Ex2 {
 		List <Integer> intList = Arrays.asList(2, 9, 43, 516, 87);
 		
 		numsEO(intList);
+		
+		
 				
 		
 	}
